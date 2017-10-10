@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_cast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.maxoldshein.dvdlist.EditCastActivity">
+
+    <EditText
+        android:id="@+id/ecActor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter actor name."/>
+
+    <EditText
+        android:id="@+id/ecCharacter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter character name."/>
+
+    <Button
+        android:id="@+id/ecAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ecAdd"
+        android:text="Add"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="Character List:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="6pt"
+        android:text="Long-click to remove a cast member."/>
+
+    <ListView
+        android:id="@+id/ecList"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/ecSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ecSubmit"
+        android:text="Submit"/>
+</LinearLayout>

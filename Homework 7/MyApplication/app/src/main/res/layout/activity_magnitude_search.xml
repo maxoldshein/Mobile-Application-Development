@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_magnitude_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.maxoldshein.earthquaketracker.MagnitudeSearchActivity">
+
+    <TextView
+        android:id="@+id/msMagnitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Magnitude Search"
+        android:textSize="12pt"/>
+
+    <TextView
+        android:id="@+id/msEarthquakesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Earthquakes with a magnitude larger than: "
+        android:textSize="7pt"/>
+    
+    <ListView
+        android:id="@+id/msListView"
+        android:layout_width="wrap_content"
+        android:layout_height="440dp">
+    </ListView>
+
+</LinearLayout>
