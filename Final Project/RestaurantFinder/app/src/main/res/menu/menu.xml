@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/actionSearchName" android:title="Search By Name"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/actionSearchZipcode" android:title="Search By Zipcode"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/actionSearchDelivery" android:title="Search By Delivery"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

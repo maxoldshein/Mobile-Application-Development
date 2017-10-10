@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_by_zipcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.maxoldshein.restaurantfinder.SearchByZipcodeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a zipcode to search:"
+        android:layout_gravity="center"
+        android:textSize="8pt"/>
+
+    <EditText
+        android:id="@+id/sbzEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter a zipcode!"
+        android:layout_gravity="center"
+        android:textSize="8pt"/>
+
+    <Button
+        android:id="@+id/sbzButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textSize="8pt"
+        android:layout_gravity="center"
+        android:onClick="searchByZipcode"/>
+
+</LinearLayout>
